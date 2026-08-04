@@ -1,0 +1,239 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 48px 20px;
+}
+
+.app__container {
+  width: 100%;
+  max-width: 560px;
+}
+
+/* Header */
+.app__header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.app__title {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  letter-spacing: -0.5px;
+}
+
+.app__subtitle {
+  margin-top: 6px;
+  color: var(--color-text-muted);
+  font-size: 15px;
+}
+
+/* Main card */
+.app__card {
+  background-color: var(--color-surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  padding: 28px;
+}
+
+/* Task input form */
+.task-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.task-input__field {
+  flex: 1;
+  padding: 12px 16px;
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-md);
+  font-size: 15px;
+  color: var(--color-text);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.task-input__field:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px var(--color-primary-light);
+}
+
+.task-input__button {
+  padding: 12px 20px;
+  background-color: var(--color-primary);
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: var(--radius-md);
+  white-space: nowrap;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.task-input__button:hover {
+  background-color: var(--color-primary-dark);
+  transform: translateY(-1px);
+}
+
+.task-input__button:active {
+  transform: translateY(0);
+}
+
+/* Stats pills */
+.app__stats {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.stat-pill {
+  flex: 1;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px;
+  border-radius: var(--radius-md);
+  background-color: var(--color-bg);
+}
+
+.stat-pill--pending {
+  background-color: var(--color-primary-light);
+}
+
+.stat-pill--completed {
+  background-color: var(--color-success-light);
+}
+
+.stat-pill__count {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.stat-pill--pending .stat-pill__count {
+  color: var(--color-primary-dark);
+}
+
+.stat-pill--completed .stat-pill__count {
+  color: var(--color-success);
+}
+
+.stat-pill__label {
+  font-size: 13px;
+  color: var(--color-text-muted);
+}
+
+/* Task list */
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 16px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  transition: box-shadow 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+}
+
+.task-item:hover {
+  box-shadow: var(--shadow-hover);
+  border-color: var(--color-primary-light);
+  transform: translateY(-1px);
+}
+
+.task-item__label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  flex: 1;
+  min-width: 0;
+}
+
+.task-item__checkbox {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--color-primary);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.task-item__text {
+  font-size: 15px;
+  color: var(--color-text);
+  word-break: break-word;
+}
+
+.task-item--done .task-item__text {
+  color: var(--color-text-muted);
+  text-decoration: line-through;
+}
+
+.task-item__delete {
+  color: var(--color-text-muted);
+  font-size: 15px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.task-item__delete:hover {
+  color: #dc2626;
+  background-color: #fee2e2;
+}
+
+/* Empty state */
+.empty-state {
+  text-align: center;
+  padding: 40px 16px;
+}
+
+.empty-state__title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 4px;
+}
+
+.empty-state__subtitle {
+  font-size: 14px;
+  color: var(--color-text-muted);
+}
+
+/* Footer */
+.app__footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 13px;
+  color: var(--color-text-muted);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .app {
+    padding: 28px 14px;
+  }
+
+  .app__card {
+    padding: 20px;
+  }
+
+  .task-input {
+    flex-direction: column;
+  }
+
+  .task-input__button {
+    width: 100%;
+  }
+
+  .app__title {
+    font-size: 26px;
+  }
+}
