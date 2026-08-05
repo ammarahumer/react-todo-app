@@ -1,75 +1,114 @@
-# TaskBoard — React To-Do App
+# ✅ TaskBoard — React To-Do Application
 
-A clean, responsive To-Do application built with React. Add, complete, and manage your daily tasks with a modern UI and persistent Local Storage — no backend required.
+![TaskBoard Preview](assets/taskboard-preview.png)
 
-**Live demo:** _add your deployed link here_
+![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=black)
+![Vite](https://img.shields.io/badge/Vite-Build%20Tool-646CFF?logo=vite&logoColor=white)
+![Context API](https://img.shields.io/badge/State-Context%20API-blue)
+![CSS3](https://img.shields.io/badge/CSS3-Responsive-1572B6?logo=css3&logoColor=white)
+![Local Storage](https://img.shields.io/badge/Storage-LocalStorage-orange)
+![Frontend](https://img.shields.io/badge/Frontend-Development-success)
 
-## Features
+🚀 **Project Type:** Frontend Developer Internship Portfolio Project
 
-- ✅ Add new tasks
-- ✅ Delete tasks
-- ✅ Mark tasks as complete / incomplete
-- ✅ Live pending & completed task counters
-- ✅ Friendly empty state when no tasks exist
-- ✅ Data persistence with Local Storage
-- ✅ Fully responsive (mobile, tablet, desktop)
-- ✅ Modern card-based UI with soft shadows and hover effects
+A modern and responsive **React-based To-Do application** developed to demonstrate core frontend development skills including **component-based architecture, state management, responsive UI design, and client-side data persistence**.
 
-## Tech Stack
-
-- **React 18** — Functional Components & Hooks
-- **Context API** — global task state management
-- **Vite** — fast dev server & build tool
-- **CSS3** — custom properties, flexbox, responsive layout
-
-## Project Structure
-
-```
-src/
-├── assets/
-├── components/
-│   ├── TaskInput.jsx     # Input form for adding tasks
-│   ├── TaskItem.jsx      # Single task row (checkbox + delete)
-│   └── TaskList.jsx      # Renders task list / empty state
-├── context/
-│   └── TaskContext.jsx   # Global state (tasks, add/delete/toggle, counts)
-├── styles/
-│   ├── index.css         # Base reset & CSS variables
-│   └── App.css           # Component styling
-├── App.jsx
-└── main.jsx
-```
-
-## Installation
-
-```bash
-git clone https://github.com/your-username/react-todo-app.git
-cd react-todo-app
-npm install
-npm run dev
-```
-
-Open `http://localhost:5173` in your browser.
-
-## Future Improvements
-
-- Task categories / tags
-- Due dates and reminders
-- Drag-and-drop reordering
-- Dark mode toggle
-- Edit task text inline
-
-## GitHub Upload Commands
-
-```bash
-git init
-git add .
-git commit -m "Initial commit: React To-Do App"
-git branch -M main
-git remote add origin https://github.com/your-username/react-todo-app.git
-git push -u origin main
-```
+TaskBoard allows users to create, manage, complete, and delete daily tasks while automatically saving task data using the browser's **Local Storage API**, ensuring tasks remain available even after refreshing or reopening the application.
 
 ---
 
-**GitHub description:** A responsive React To-Do app with Context API state management, Local Storage persistence, and a modern blue-and-white UI.
+## 👩‍💻 About The Project
+
+TaskBoard was developed as an internship portfolio project to showcase practical React development skills expected from an entry-level frontend developer.
+
+The project focuses on:
+
+* Reusable React components
+* Clean folder architecture
+* Global state management using Context API
+* Responsive user interface design
+* Local Storage based data persistence
+
+The application follows a modular structure where each component has a specific responsibility, making the codebase easier to maintain and extend.
+
+---
+
+## 🚀 Project Objectives
+
+The main objectives of this project were:
+
+* Build a functional Single Page Application using React
+* Practice React functional components and hooks
+* Implement global state management using Context API
+* Create reusable and maintainable components
+* Design a professional responsive interface
+* Store application data without requiring a backend server
+
+---
+
+## ✨ Features
+
+* Add new tasks through validated input
+* Mark tasks as completed or incomplete
+* Delete individual tasks
+* Live pending and completed task counters
+* Empty-state message when no tasks exist
+* Automatic task persistence using Local Storage
+* Responsive design for mobile, tablet, and desktop
+* Modern card-based UI with smooth hover interactions
+
+---
+
+## 🛠️ Technologies Used
+
+### Frontend Development
+
+* React 18
+* Vite
+* JavaScript (ES6+)
+* CSS3
+
+### State Management
+
+* React Context API
+
+### Browser Features
+
+* Local Storage API
+
+### Development Tools
+
+* Visual Studio Code
+* Git
+* GitHub
+
+---
+
+## 📂 Project Structure
+
+```text
+react-todo-app/
+
+│
+├── public/
+│
+├── src/
+│   │
+│   ├── components/
+│   │   ├── TaskInput.jsx
+│   │   ├── TaskItem.jsx
+│   │   └── TaskList.jsx
+│   │
+│   ├── context/
+│   │   └── TaskContext.jsx
+│   │
+│   ├── styles/
+│   │   ├── App.css
+│   │   └── index.css
+│   │
+│   ├── App.jsx
+│   └── main.jsx
+│
+├── package.json
+├── vite.config.js
+└── README.md
