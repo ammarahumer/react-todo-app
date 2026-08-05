@@ -1,4 +1,4 @@
-# ✅ TaskBoard — React To-Do Application
+# TaskBoard — React To-Do Application
 
 ![TaskBoard Preview](assets/taskboard-preview.jpeg)
 
@@ -9,16 +9,17 @@
 ![Local Storage](https://img.shields.io/badge/Storage-LocalStorage-orange)
 ![Frontend](https://img.shields.io/badge/Frontend-Development-success)
 
-🚀 **Project Type:** Frontend Developer Internship Portfolio Project
+**Live Demo:** https://ammarahumer.github.io/react-todo-app/
+
+---
 
 A modern and responsive **React-based To-Do application** developed to demonstrate core frontend development skills including **component-based architecture, state management, responsive UI design, and client-side data persistence**.
 
 TaskBoard allows users to create, manage, complete, and delete daily tasks while automatically saving task data using the browser's **Local Storage API**, ensuring tasks remain available even after refreshing or reopening the application.
-<<<<<<< HEAD
 
 ---
 
-# 👩‍💻 About The Project
+# About The Project
 
 **TaskBoard** was developed as an internship portfolio project to showcase practical React development skills expected from an entry-level frontend developer.
 
@@ -34,7 +35,7 @@ The application follows a modular structure where each component has a specific 
 
 ---
 
-# 🚀 Project Objectives
+# Project Objectives
 
 The main objectives of this project were:
 
@@ -47,7 +48,7 @@ The main objectives of this project were:
 
 ---
 
-# ✨ Features
+# Features
 
 * Add new tasks through validated input
 * Mark tasks as completed or incomplete
@@ -60,7 +61,7 @@ The main objectives of this project were:
 
 ---
 
-# 🛠️ Technologies Used
+# Technologies Used
 
 ## Frontend Development
 
@@ -85,16 +86,18 @@ The main objectives of this project were:
 
 ---
 
-# 📂 Project Structure
+# Project Structure
 
 ```text
 react-todo-app/
-
+│
+├── assets/
+│   └── taskboard-preview.jpeg
 │
 ├── public/
 │
 ├── src/
-│   │
+│   ├── assets/
 │   ├── components/
 │   │   ├── TaskInput.jsx
 │   │   ├── TaskItem.jsx
@@ -110,6 +113,9 @@ react-todo-app/
 │   ├── App.jsx
 │   └── main.jsx
 │
+├── public/
+├── .gitignore
+├── index.html
 ├── package.json
 ├── vite.config.js
 └── README.md
@@ -117,7 +123,7 @@ react-todo-app/
 
 ---
 
-# 🏗️ Application Architecture
+# Application Architecture
 
 The application follows a modular React component architecture:
 
@@ -156,7 +162,7 @@ This structure keeps state management centralized while maintaining reusable and
 
 ---
 
-# ⚙️ Installation & Setup
+# Installation & Setup
 
 To run this project locally:
 
@@ -188,7 +194,7 @@ Open the local development URL in your browser.
 
 ---
 
-# 🎯 Challenges Faced
+# Challenges Faced
 
 During development, the following challenges were addressed:
 
@@ -198,7 +204,7 @@ During development, the following challenges were addressed:
 
 ---
 
-# 🔮 Future Improvements
+# Future Improvements
 
 Planned improvements:
 
@@ -210,7 +216,7 @@ Planned improvements:
 
 ---
 
-# 👩‍💻 Author
+# Author
 
 **Ammarah Umer**
 
@@ -226,108 +232,9 @@ Interested in:
 
 ---
 
-# 🔗 Connect With Me
+# Connect With Me
 
 - **GitHub:** https://github.com/ammarahumer
 
 - **LinkedIn:** https://linkedin.com/in/ammarahumer
-=======
 
----
-
-## 👩‍💻 About The Project
-
-TaskBoard was developed as an internship portfolio project to showcase practical React development skills expected from an entry-level frontend developer.
-
-The project focuses on:
-
-* Reusable React components
-* Clean folder architecture
-* Global state management using Context API
-* Responsive user interface design
-* Local Storage based data persistence
-
-The application follows a modular structure where each component has a specific responsibility, making the codebase easier to maintain and extend.
-
----
-
-## 🚀 Project Objectives
-
-The main objectives of this project were:
-
-* Build a functional Single Page Application using React
-* Practice React functional components and hooks
-* Implement global state management using Context API
-* Create reusable and maintainable components
-* Design a professional responsive interface
-* Store application data without requiring a backend server
-
----
-
-## ✨ Features
-
-* Add new tasks through validated input
-* Mark tasks as completed or incomplete
-* Delete individual tasks
-* Live pending and completed task counters
-* Empty-state message when no tasks exist
-* Automatic task persistence using Local Storage
-* Responsive design for mobile, tablet, and desktop
-* Modern card-based UI with smooth hover interactions
-
----
-
-## 🛠️ Technologies Used
-
-### Frontend Development
-
-* React 18
-* Vite
-* JavaScript (ES6+)
-* CSS3
-
-### State Management
-
-* React Context API
-
-### Browser Features
-
-* Local Storage API
-
-### Development Tools
-
-* Visual Studio Code
-* Git
-* GitHub
-
----
-
-## 📂 Project Structure
-
-```text
-react-todo-app/
-
-│
-├── public/
-│
-├── src/
-│   │
-│   ├── components/
-│   │   ├── TaskInput.jsx
-│   │   ├── TaskItem.jsx
-│   │   └── TaskList.jsx
-│   │
-│   ├── context/
-│   │   └── TaskContext.jsx
-│   │
-│   ├── styles/
-│   │   ├── App.css
-│   │   └── index.css
-│   │
-│   ├── App.jsx
-│   └── main.jsx
-│
-├── package.json
-├── vite.config.js
-└── README.md
->>>>>>> 8556925 (Add project preview image and update README)
