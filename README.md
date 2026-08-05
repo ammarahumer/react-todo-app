@@ -1,6 +1,6 @@
 # TaskBoard — React To-Do Application
 
-![TaskBoard Preview](assets/taskboard-preview.png)
+![TaskBoard Preview](assets/taskboard-preview.jpeg)
 
 ![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=black)
 ![Vite](https://img.shields.io/badge/Vite-Build%20Tool-646CFF?logo=vite&logoColor=white)
